@@ -1,0 +1,12 @@
+Andrew:
+  Update Transaction:
+    Error when a refresh occurs
+
+  Navbar 2 doesnt redirect to other routes.
+    Cannot put into login page
+
+Install:
+    react-portal
+
+
+            

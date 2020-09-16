@@ -1,0 +1,1 @@
+web: gunicorn treatyoself1:app

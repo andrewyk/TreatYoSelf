@@ -10,7 +10,7 @@
     "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch ./src/index.js --output ./static/frontend/main.js",
-    "build": "webpack --mode production ./TreatYoSelf/frontend/src/index.js"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",

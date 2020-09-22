@@ -49,6 +49,7 @@ class DoughnutChart2 extends Component {
                 incomeTotalYear += this.props.totalObject.monthly_data[key]["monthly_gained"];
             }
         }
+        incomeTotalYear = incomeTotalYear.toFixed(2)
         if (totalCatIncome < incomeTotalYear) {
             incomeDataset.push(incomeTotalYear - totalCatIncome);
             incomeLabels.push("Unassigned Category Transactions");
@@ -73,6 +74,7 @@ class DoughnutChart2 extends Component {
                 expenseTotalYear += this.props.totalObject.monthly_data[key]["monthly_spent"];
             }
         }
+        expenseTotalYear = expenseTotalYear.toFixed(2)
         if (totalCatExpense < expenseTotalYear) {
             incomeDataset.push(expenseTotalYear - totalCatExpense);
             incomeLabels.push("Unassigned Category Transactions");

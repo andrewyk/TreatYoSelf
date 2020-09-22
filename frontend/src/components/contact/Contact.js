@@ -78,7 +78,7 @@ class Contact extends Component {
                                     <Form.Label>Message</Form.Label>
                                     <Form.Control
                                         as="textarea"
-                                        rows="3"
+                                        rows="6"
                                         name="message"
                                         placeholder="Your Message"
                                         required
@@ -89,7 +89,7 @@ class Contact extends Component {
                                     variant="outline-dark"
                                     type="submit"
                                 >
-                                    Send! <img src={send} className="paperAirplane"></img>
+                                    Send <img src={send} className="paperAirplane"></img>
                                 </Button>
 
                             </form>

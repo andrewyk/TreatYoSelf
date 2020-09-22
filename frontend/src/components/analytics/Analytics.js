@@ -298,7 +298,7 @@ class Analytics extends Component {
                                         onClick={this.handleSwitch2}
                                     >
                                         <p>
-                                            Goal vs. Income Graph
+                                            {this.props.year} Total Expenses Graph
                                             </p>
                                     </DropdownItem>
                                 </DropdownMenu>

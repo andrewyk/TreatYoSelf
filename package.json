@@ -1,0 +1,15 @@
+{
+    "name": "Treatyoself",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "",
+    "author": "",
+    "license": "",
+    "private": true,
+    "scripts": {
+      "heroku-prebuild": "NODE_ENV=production cd frontend/ && yarn install && yarn build && cd .."
+    },
+    "cacheDirectories": [
+      "frontend/node_modules"
+    ]
+  }

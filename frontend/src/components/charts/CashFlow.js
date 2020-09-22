@@ -7,8 +7,14 @@ const CashFlow = (props) => {
     let sWidth = 0;
     let gWidth = 0;
     let spent = props.yearlySpent
+    spent = parseFloat(spent)
+    spent = spent.toFixed(2);
     let gained = props.yearlyGained
+    gained = parseFloat(gained)
+    gained = gained.toFixed(2);
     let netGain = gained - spent;
+    netGain = netGain.toFixed(2);
+
     whichWidth();
 
     useEffect(() => {
@@ -49,14 +55,13 @@ const CashFlow = (props) => {
         absolute = `-$${Math.abs(netGain)}`;
 
     }
-
     return (
         <div className="cashFlow">
             <h2>
                 Cash Flow
                 </h2>
             <p>
-                You've earned ${props.yearlyGained} and spent ${props.yearlySpent} in {props.year}.
+                You've earned ${gained} and spent ${spent} in {props.year}.
                 </p>
             <div className="progress">
                 <div className="progress-gain" style={gStyle}></div>

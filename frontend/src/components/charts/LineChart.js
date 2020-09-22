@@ -26,8 +26,17 @@ class LineChart extends Component {
                 let splitIndex = key.length - 4;
                 console.log("splitindex", key, splitIndex)
                 monthLabels.push(key.substring(0, splitIndex) + "/" + key.substring(splitIndex));
-                monthlyGained.push(monthlyData[key]['monthly_gained']);
-                monthlySpent.push(monthlyData[key]['monthly_spent']);
+
+                let gain = monthlyData[key]['monthly_gained']
+                gain = parseFloat(gain)
+                gain = gain.toFixed(2)
+                monthlyGained.push(gain);
+
+                let spent = monthlyData[key]['monthly_spent']
+                spent = parseFloat(spent)
+                spent = spent.toFixed(2)
+                monthlySpent.push(spent);
+
                 monthCount += 1;
                 if (monthCount > 11) {
                     break;

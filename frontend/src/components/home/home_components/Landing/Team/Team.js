@@ -64,7 +64,7 @@ class Team extends Component {
                                     <div className="card-body">
                                         <h4 className="card-title">Have a question?</h4>
                                         <p className="card-subtitle">For any questions, concerns,
-                                        or business inquiries about Treat Yo’ Self, <Link className="contactUs" to="">contact us</Link>
+                                        or business inquiries about Treat Yo’ Self, <Link className="contactUs" to="/contact">contact us</Link>
                                         &nbsp;and we would be happy to help. </p>
                                     </div>
                                 </div>

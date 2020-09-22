@@ -237,6 +237,7 @@ class Overview extends Component {
 
 
     render() {
+        console.log("hi", this.state.monthlyGained)
         let totalText;
         if (this.state.loading) {
             totalText = <h1>Loading</h1>;

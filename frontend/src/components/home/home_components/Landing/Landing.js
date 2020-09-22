@@ -8,6 +8,7 @@ import Navbar2 from "../../../navbar2/Navbar2";
 import Future from "../Landing/Future/Future";
 import Copyright from "../Landing/Copyright/Copyright";
 import "./Landing.css";
+
 class Landing extends Component {
     constructor(props) {
         super(props)
@@ -25,6 +26,7 @@ class Landing extends Component {
 
         return (
             <div className="Landing">
+                
                 <Navbar2 redirectTotalPage={this.redirectTotalPage} />
                 <Main redirectTotalPage={this.redirectTotalPage} />
                 <Features />
@@ -32,7 +34,6 @@ class Landing extends Component {
                 <Team />
                 <Future />
                 <Copyright />
-
             </div>
         )
     }
